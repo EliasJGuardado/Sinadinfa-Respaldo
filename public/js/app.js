@@ -2347,9 +2347,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -38416,25 +38437,70 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "vue-tempalte" }, [
+    _c("form", [
+      _c("h3", [_vm._v("Iniciar sesión en Sinadinfa")]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-dark btn-lg btn-block",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("\n      Iniciar sesión\n    ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { staticClass: "forgot-password text-right mt-2 mb-4" },
+        [
+          _c("router-link", { attrs: { to: "/forgot-password" } }, [
+            _vm._v("¿Olvidate tu cuenta?")
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-dark btn-lg btn-block",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("\n      Crear cuenta nueva\n    ")]
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [_vm._v("Eliminar")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v("\n                    Ejemplo\n                ")
-            ])
-          ])
-        ])
-      ])
+    return _c("div", { staticClass: "form-group" }, [
+      _c("label", [_vm._v("Nombre de usuario")]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control form-control-lg",
+        attrs: { type: "email" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("label", [_vm._v("Constraseña")]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control form-control-lg",
+        attrs: { type: "password" }
+      })
     ])
   }
 ]
